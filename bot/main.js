@@ -17,7 +17,7 @@ client.on("messageCreate", (message) => {
 
   if (message.content.startsWith(`${prefix}foo`)) {
     message.channel.send("bar!");
-  }
+  } 
 });
 
 client.login(process.env.TOKEN);

@@ -1,0 +1,10 @@
+^C:\USERS\EVATOO\.CARGO\REGISTRY\SRC\GITHUB.COM-1ECC6299DB9EC823\FERMIUM-20016.1.1\SDL2-2.0.16\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/evatoo/.cargo/registry/src/github.com-1ecc6299db9ec823/fermium-20016.1.1/SDL2-2.0.16 -BC:/Users/evatoo/Desktop/vscode/git/random/rs/target/debug/build/fermium-1fc2047b7aaac22c/out/build --check-stamp-file C:/Users/evatoo/Desktop/vscode/git/random/rs/target/debug/build/fermium-1fc2047b7aaac22c/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\EVATOO\DESKTOP\VSCODE\GIT\RANDOM\RS\TARGET\DEBUG\BUILD\FERMIUM-1FC2047B7AAAC22C\OUT\BUILD\CMAKEFILES\E03DFF5BD946CD4D0B66F92B56D65B75\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
